@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+		/>
+		<title>AWS Educational Site</title>
+		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+
+	<body>
+		<div class="font">
+			<nav id="mynav" class="navbar navbar-light navbar-expand-md fixed-top">
+				<div class="container-fluid">
+					<a id="brand" class="navbar-brand brandBackground" href="#home">
+						<img class="icon" src="assets/img/clipboard-image.png" />
+						Learn AWS
+					</a>
+					<button
+						id="expandMenu"
+						data-bs-toggle="collapse"
+						class="navbar-toggler"
+						data-bs-target="#navcol-1"
+					>
+						<!-- <span class="visually-website-box-hidden"></span> -->
+						<!-- <span class="navbar-toggler-icon"></span> -->
+						<svg
+							id="ham"
+							class="ham hamRotate ham4"
+							viewBox="0 0 100 100"
+							width="80"
+							onclick="this.classList.toggle('active')"
+						>
+							<path
+								class="line top"
+								d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20"
+							/>
+							<path class="line middle" d="m 70,50 h -40" />
+							<path
+								class="line bottom"
+								d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20"
+							/>
+						</svg>
+					</button>
+					<div class="collapse navbar-collapse" id="navcol-1">
+						<ul class="nav mx-auto">
+							<li class="nav-item">
+								<a class="nav-link linkBackground active" href="#home">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link linkBackground" href="#website-hosting"
+									>Website Hosting</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link linkBackground" href="#api">API</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link linkBackground" href="#data-storage"
+									>Data Storage</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link linkBackground" href="#data-pipelines"
+									>Data Pipelines</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link linkBackground" href="#authentication"
+									>Authentication</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<section id="home" class="home">
+				<div class="container column-layout">
+					<div class="alignTextLeft sidebar-one whiteBackground">
+						<h1>What is AWS for?</h1>
+						<p>
+							AWS or Amazon Web Services is the most popularly used cloud
+							computing solution. You can host anything you want whether it be a
+							database, website, IoT project, login solution, data pipeline,
+							machine learning, and more. This tutorial aims to guide beginners
+							into the world of cloud computing with AWS.
+						</p>
+						<div class="tutorialInfo">
+							<img
+								class="img-fluid center-image osuapp-image"
+								src="assets/img/image 2.png"
+							/>
+							<p>
+								This tutorial is brought to you by the
+								<a
+									class="footer-link"
+									target="_blank"
+									href="https://osuapp.club"
+									>OSU App Development Club</a
+								>.
+							</p>
+						</div>
+						<div class="btn-container">
+							<button
+								class="start-learning-btn"
+								type="button"
+								onclick="window.location.href='#website-hosting'"
+							>
+								Start Learning Now!
+								<i class="fa fa-arrow-down downArrowIcon"></i>
+								<!-- <img
+									class="img-fluid center-image arrow-image"
+									src="assets/img/Arrow downward.svg"
+								/> -->
+							</button>
+						</div>
+					</div>
+
+					<div class="sidebar-two">
+						<!-- <iframe
+							class="scaledIframeShiftedRight"
+							src="https://my.spline.design/3dtextbluecopy-fdbd67785c3e504840619ec0bff7f5b5/"
+							loading="lazy"
+							frameborder="0"
+						></iframe> -->
+						<img
+							class="img-fluid center-image home-image"
+							src="assets/img/image 47.png"
+						/>
+					</div>
+				</div>
+			</section>
+			<section id="website-hosting" class="website">
+				<div class="container whiteBackground">
+					<div class="whiteBackground introTxt">
+						<h3>Hosting a Website</h3>
+						<p>
+							Website hosting is a common thing to do, but sometimes you may
+							want to expand your website’s functionality with more complex
+							services like databases, analytics, machine learning, etc. Hosting
+							your website on AWS is a great way to bridge this gap. Shown below
+							are some of the most common ways of hosting a website.
+						</p>
+						<p>
+							<u>Note</u>: Anything can be as simple or as complicated as you
+							want it.
+						</p>
+					</div>
+					<div class="website-column-layout">
+						<div class="website-box-hidden website-box">
+							<h3>Pre-Reqs</h3>
+							<h3 class="redText">Prepare Code</h3>
+							<img
+								class="img-fluid center-image website-image"
+								src="assets/img/Group 1.png"
+							/>
+							<p>
+								Have your website ready to deploy, whether it be a React app,
+								WordPress site, ASP.NET application, or plain old HTML, CSS, and
+								JS.
+							</p>
+						</div>
+						<div class="website-box-hidden website-box shiftDown">
+							<h3>Deployment option 1</h3>
+							<h3 class="redText">Lightsail</h3>
+							<h8 class="blueText">Difficulty: Easy</h8>
+							<img
+								class="img-fluid center-image website-image"
+								src="assets/img/image 50.png"
+							/>
+							<p>
+								Lightsail is the easiest way to deploy a website on AWS. Simply
+								upload your code or pass a link to your Docker image repository.
+								Lightsail will then provide you a link to access your public
+								site online. The
+								<a
+									class="footer-link"
+									target="_blank"
+									href="https://store.osuapp.club"
+									>OSU App Store</a
+								>
+								was deployed using this method.
+							</p>
+						</div>
+					</div>
+					<div class="website-column-layout">
+						<div class="website-box-hidden website-box">
+							<h3>Deployment option 2</h3>
+							<h3 class="redText">Amplify</h3>
+							<h8 class="blueText">Difficulty: Easy</h8>
+							<img
+								class="img-fluid center-image website-image"
+								src="assets/img/image 51.png"
+							/>
+							<p>
+								Amplify is another easy way to deploy a website on AWS. Simply
+								upload your code or pass a link to your GitHub repository
+								containing your code. Amplify will then provide you a link to
+								access your public site online. Amplify also makes it easy to
+								extend your site’s functionality by combining with login, API,
+								and database resources.
+							</p>
+						</div>
+						<div class="website-box-hidden website-box shiftDown">
+							<h3>Deployment option 3</h3>
+							<h3 class="redText">S3</h3>
+							<h8 class="blueText">Difficulty: Moderate</h8>
+							<img
+								class="img-fluid center-image website-image"
+								src="assets/img/image 52.png"
+							/>
+							<p>
+								S3 is a basically like Google Drive in which you can upload your
+								static files to. This method is best suited for simple HTML,
+								CSS, and JS files. Once you upload your files, S3 will provide
+								you a link to access them publicly in the web. You can
+								optionally add a content delivery network like Cloudfront in
+								front of your URL for localized caching of web content. This
+								simply reduces direct calls to your S3 content because they are
+								fetched from the Cloudfront cache.
+							</p>
+						</div>
+					</div>
+					<div class="website-column-layout">
+						<div class="website-box-hidden website-box">
+							<h3>Elastic Beanstalk vs Elastic Container Service</h3>
+							<h8 class="blueText"
+								>Elastic Beanstalk Difficulty: Semi Advanced</h8
+							>
+							<h8 class="blueText"
+								>Elastic Container Service Difficulty: Advanced</h8
+							>
+							<img
+								class="img-fluid center-image website-image"
+								src="assets/img/image 53.png"
+							/>
+							<p>
+								Deployment options 4 and 5 can be deployed using either elastic
+								beanstalk or elastic container service. The only difference
+								between the two is that elastic beanstalk provides an easy to
+								use interface for deploying an elastic container service under
+								the hood. Some options may also not be available if using
+								elastic beanstalk. If you want to get fine grained control over
+								your site’s architecture, use elastic container service. Both
+								services allow you to spin up one or more copies of your site
+								across several servers. Your provide a link to the Docker image
+								of your website code and it’ll run it on each server. The amount
+								of servers running can be be automatically determined by an
+								auto-scaling group which detect the amount of traffic to your
+								site given the available CPU, memory from the servers available.
+								If too much traffic is coming, and there isn’t enough CPU or
+								memory from the current servers, it’ll automatically spin up
+								more servers to meet the demand. Lastly a load balancer will
+								provide you a url to visit your site and it will evenly
+								distribute traffic across your servers.
+							</p>
+						</div>
+						<div class="website-box-hidden website-box shiftDown">
+							<h3>Deployment option 4</h3>
+							<h3 class="redText">Fargate</h3>
+							<h8 class="blueText">Difficulty: Advanced</h8>
+							<img
+								class="img-fluid center-image website-image"
+								src="assets/img/image 54.png"
+							/>
+							<p>
+								Fargate allows you to deploy servers on the cloud without the
+								hassle of managing them. This means they won’t show up as
+								traditional EC2 servers nor will they officially show up in your
+								account since they are actually managed by AWS. This makes
+								deploying easier since management of servers directly are
+								handled by AWs. You can only select a predefined server type and
+								it will be used for running your website code.
+							</p>
+						</div>
+					</div>
+					<div class="website-column-layout">
+						<div class="website-box-hidden website-box">
+							<h3>Deployment option 5</h3>
+							<h3 class="redText">EC2</h3>
+							<h8 class="blueText">Difficulty: Advanced</h8>
+							<img
+								class="img-fluid center-image website-image"
+								src="assets/img/image 55.png"
+							/>
+							<p>
+								EC2 is the traditional way of deploying servers. These servers
+								will show up under your account as they are managed by you. You
+								have more control over the specifics of your servers such as
+								they security permissions they have as well as the virtual cloud
+								network they can be attached to. You can also have more control
+								over what software can be deployed onto the servers. It requires
+								more management and maintenance though. You can still select a
+								predefined server type and it will be used for running your
+								website code.
+							</p>
+						</div>
+						<div class="website-box-hidden website-box shiftDown">
+							<h3>Deployment option 6</h3>
+							<h3 class="redText">Elastic Kubernetes Service</h3>
+							<h8 class="blueText">Difficulty: Hard</h8>
+							<img
+								class="img-fluid center-image website-image"
+								src="assets/img/image 56.png"
+							/>
+							<p>
+								Elastic Kubernetes Service is based on the popularily used open
+								source Kubernetes service for container orchestration. It does
+								the same thing as Elastic Beanstalk and Elastic Container
+								Service except that AWS doesn’t provide you an interface for
+								managing your servers, autoscaling group, etc. Instead you get a
+								link to the Kubernetes Control Plane which is where you set up
+								your architecture and adjust settings. So if you like using
+								Kubernetes, you can migrate to this service fairly easily.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="api" class="api">
+				<div class="container">
+					<div class="introTxt">
+						<h3>API</h3>
+						<p>
+							The goal of an API is to serve data requested by the user. An user
+							typically queries data with a given filter such as an id,
+							timestamp, token, etc. The server will respond back with the
+							requested data or something to acknowledge that the request had
+							been processed.
+						</p>
+					</div>
+					<div class="api-column-layout">
+						<div class="column1">
+							<div class="apiBox1-above"></div>
+							<div class="apiBox1">
+								<div class="apiBox1Content">
+									<h3>GraphQL API</h3>
+									<h3 class="redText">AppSync</h3>
+									<h8 class="blueText">Difficulty: Moderate / Advanced</h8>
+									<img
+										class="img-fluid center-image api-image"
+										src="assets/img/image 22.png"
+									/>
+									<p>
+										Another fairly new API is GraphQL. It puts more of the data
+										queries onto the user. So the user selects the exact pieces
+										of data they want, including relationships to other pieces
+										of data in a single query. AppSync can run GraphQL for you.
+										You simply write queries/mutations an user can perform and
+										how it will map to the data sources (e.g. Lambda function,
+										database, or other data source). The
+										<a
+											class=""
+											target="_blank"
+											href="https://appdove.wixsite.com/club/post/fall-2022-smart-home-app-showcase"
+										>
+											Smart Home App backend
+										</a>
+										was deployed using this method.
+									</p>
+								</div>
+							</div>
+							<div class="apiBox1-below">
+								<img
+									class="img-fluid center-image cross-image"
+									src="assets/img/cross.png"
+								/>
+							</div>
+						</div>
+						<div class="column2">
+							<div class="apiBox2">
+								<div class="apiBox2Content">
+									<h3>REST API</h3>
+									<h3 class="redText">API Gateway</h3>
+									<h8 class="blueText">Difficulty: Moderate</h8>
+									<img
+										class="img-fluid center-image api-image"
+										src="assets/img/image 23.png"
+									/>
+									<p>
+										The most common type of API is REST. You typically perform
+										create, read, update, and delete operations which are POST,
+										GET, PUT, and DELETE, respectively. You can use an API
+										Gateway as an entry point to your API code. It’ll map out
+										all the different paths and methods for you and you can
+										either have one Lambda function for each path/method or one
+										Lambda function to handle them all. The Lambda function will
+										simply run your code and so you choose what you want to do
+										with the input request. API Gateway will provide you with a
+										public url to use.
+									</p>
+								</div>
+							</div>
+							<div class="apiBox3">
+								<div class="apiBox3Content">
+									<h3>Manual Way</h3>
+									<h3 class="redText">Elastic Beanstalk, ECS, EKS</h3>
+									<h8 class="blueText">Difficulty: Advanced</h8>
+									<img
+										class="img-fluid center-image api-image"
+										src="assets/img/image 24.png"
+									/>
+									<p>
+										Of course it is also possible to use Elastic Beanstalk,
+										Elastic Container Service, or Elastic Kubernetes Service to
+										host any API. This is the most flexible, but also tedious
+										solution, to getting the job done. You simply package your
+										API code in a Docker image and deploy it to one of the three
+										methods just like a website.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="data-storage" class="data-storage">
+				<div class="container whiteBackground">
+					<div class="introTxt">
+						<h3>Data Storage</h3>
+						<p>
+							There are several options for storing data. The following are a
+							selection of some of the most commonly used databases as well as
+							some unique use cases.
+						</p>
+					</div>
+					<div class="data-storage-column-layout data-storage-row1">
+						<div
+							class="data-storage-box-hidden data-storage-box data-storage-outside-column"
+						>
+							<h3 class="centerTextHorizontally">S3</h3>
+							<img
+								class="img-fluid center-image data-storage-image"
+								src="assets/img/image 25.png"
+							/>
+							<p>
+								S3 or simple storage service is like Google Drive. You can
+								upload all sorts of files you want here whether they be static
+								website files, transaction records, logs, temporary file
+								storage, machine learning input/output data, etc.
+							</p>
+						</div>
+						<div class="data-storage-box-hidden data-storage-box">
+							<h3 class="centerTextHorizontally">RDS</h3>
+							<img
+								class="img-fluid center-image data-storage-image"
+								src="assets/img/image 29.png"
+							/>
+							<p>
+								RDS or relational database service. It is a solution for hosting
+								database systems like MySQL, SQL Server, or PostgresSQL. You
+								always stored data in a relational format which means data from
+								one table should relate to data in another table. The format of
+								data in each column is very strict and the data you insert must
+								adhere to the data formats that you specify. RDS is
+								traditionally a server option which means you specify the number
+								of servers you need and what type you need. However, there is
+								currently a preview option for hosting MySQL RDS in serverless
+								mode as of December 2022.
+							</p>
+						</div>
+						<div
+							class="data-storage-box-hidden data-storage-box data-storage-outside-column"
+						>
+							<h3 class="centerTextHorizontally">DynamoDB</h3>
+							<img
+								class="img-fluid center-image data-storage-image"
+								src="assets/img/image 26.png"
+							/>
+							<p>
+								DynamoDB is an easy to use database for setting up relational or
+								non-relational data. You typically store records in a table like
+								format and each record can store an arbitrary amount of data in
+								columnar format. You can relate data in different DynamoDB
+								tables by storing id references in each record (e.g. book table
+								has a column called owner which contains the id of a person in
+								the person table). It is a serverless service which means you
+								don’t manage any servers.
+							</p>
+						</div>
+					</div>
+					<div class="data-storage-column-layout data-storage-row2">
+						<div
+							class="data-storage-box-hidden data-storage-box data-storage-outside-column"
+						>
+							<h3 class="centerTextHorizontally">DocumentDB</h3>
+							<img
+								class="img-fluid center-image data-storage-image"
+								src="assets/img/image 28.png"
+							/>
+							<p>
+								MongoDB is one of the most popular software for storing data in
+								a document form. It is quite similar to DynamoDB in which you
+								can choose to have data stored in relational or non-relational
+								format. However, the data is structure more like JSON and not so
+								much as a table. You can host a MongoDB cluster using DocumentDB
+								by AWS.
+							</p>
+						</div>
+						<div class="data-storage-box-hidden data-storage-box">
+							<h3 class="centerTextHorizontally">Timestream</h3>
+							<img
+								class="img-fluid center-image data-storage-image"
+								src="assets/img/image 30.png"
+							/>
+							<p>
+								Timestream is a unique type of database for store data
+								sequentially in time. You might store weather forecasts or IoT
+								data here as data is aggregated over time. It is built for this
+								special case. However, it it still possible to use previously
+								mentioned database methods for storing data in sequences of
+								time. This database method simply provides a direct method for
+								solving such a problem.
+							</p>
+						</div>
+						<div
+							class="data-storage-box-hidden data-storage-box data-storage-outside-column"
+						>
+							<h3 class="centerTextHorizontally">QLDB</h3>
+							<img
+								class="img-fluid center-image data-storage-image"
+								src="assets/img/image 31.png"
+							/>
+							<p>
+								QLDB or quantum ledger database is a blockchain type of
+								database. It allows you to store data on a blockchain which
+								basically stores your data sequentially (the last record added
+								is the last item on the block “chain”), acting as a ledger. This
+								blockchain can be kept private and doesn’t have a relationship
+								with cryptocurrency.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="data-pipelines" class="data-pipelines">
+				<div class="container whiteBackground">
+					<div class="introTxt">
+						<h3>Data Pipelines</h3>
+						<p>
+							Data pipelines are commonly used to get data from one or more
+							sources to one or more destinations. They can also act as buffers
+							between sources and destinations in case the data flow has too
+							much ongoing traffic of a destination fails to process a message.
+							You can also chain multiple data pipelines together with
+							intermediate steps in between. For example, you can fetch data
+							from one pipelines, perform analytics on the data, and send the
+							output to another data pipeline.
+						</p>
+					</div>
+					<div class="data-pipelines-row-layout">
+						<div
+							class="data-pipelines-column-layout data-pipelines-box-marginRow1"
+						>
+							<div class="data-pipelines-box-hidden data-pipelines-box">
+								<h3 class="centerTextHorizontally">Kinesis Data Streams</h3>
+								<img
+									class="img-fluid center-image data-pipelines-image"
+									src="assets/img/image 33.png"
+								/>
+								<p>
+									Kinesis Data Streams is a way to pass data from one or more
+									producers (generates data) to one or more consumers (process
+									data). Data can optionally be stored on a stream for up to a
+									year before being discarded. Typically consumers will have to
+									poll for the data. Each time you poll for data, you can either
+									fetch the last record that was added, the first record that
+									was added, or your last cursor position (this is the last
+									record you looked at) and then go from there.
+								</p>
+							</div>
+						</div>
+						<div
+							class="data-pipelines-column-layout data-pipelines-box-marginRow2"
+						>
+							<div class="data-pipelines-box-hidden data-pipelines-box">
+								<h3 class="centerTextHorizontally">Kinesis Firehose</h3>
+								<img
+									class="img-fluid center-image data-pipelines-image"
+									src="assets/img/image 40.png"
+								/>
+								<p>
+									Kinesis Firehose will aggregate all data it ingests from a one
+									or more producers over a period of time (e.g. one minute) or
+									if a buffer has exceed its maximum capacity (e.g. 1GB data
+									collected). After either criteria has expired, then all the
+									data aggregated will be sent out of the data pipeline to its
+									next destination in a single action. Data does not get stored
+									on the pipeline.
+								</p>
+							</div>
+							<div class="data-pipelines-box-hidden data-pipelines-box">
+								<h3 class="centerTextHorizontally">MSK</h3>
+								<img
+									class="img-fluid center-image data-pipelines-image"
+									src="assets/img/image 41.png"
+								/>
+								<p>
+									MSK or managed service for Kafka is a service for hosting
+									Kafka data pipelines. Kafka is one of the most popular open
+									source data pipeline. It pretty much does the same thing as
+									Kinesis Data streams except it allows for more fine grain
+									control over you data pipelines, typically for more advanced
+									DevOps developers.
+								</p>
+							</div>
+						</div>
+						<div
+							class="data-pipelines-column-layout data-pipelines-box-marginRow3"
+						>
+							<div class="data-pipelines-box-hidden data-pipelines-box">
+								<h3 class="centerTextHorizontally">Event Bridge</h3>
+								<img
+									class="img-fluid center-image data-pipelines-image"
+									src="assets/img/image 42.png"
+								/>
+								<p>
+									Event Bridge is typically used for internal use between
+									different AWS services. As the name implies, the data pipeline
+									from a source to a destination is event driven, meaning that
+									as a source generates data, it’ll trigger the pipeline and
+									notify the destinations of the newly arrived data. Event
+									Bridge also provides schedulers to automatically send
+									destinations pieces of data based on a set schedule. Data does
+									not get stored on the pipeline.
+								</p>
+							</div>
+							<div class="data-pipelines-box-hidden data-pipelines-box">
+								<h3 class="centerTextHorizontally">SNS</h3>
+								<img
+									class="img-fluid center-image data-pipelines-image"
+									src="assets/img/image 43.png"
+								/>
+								<p>
+									As the logo implies, SNS, or simple notification service, gets
+									data from one source and notifies one or more data sources of
+									the new data. SNS can be used to trigger other AWS services or
+									send out notifications through mailing like AWS simple email
+									service or phone SMS texts. Data does not get stored on the
+									pipeline.
+								</p>
+							</div>
+						</div>
+						<div
+							class="data-pipelines-column-layout data-pipelines-box-marginRow4"
+						>
+							<div class="data-pipelines-box-hidden data-pipelines-box">
+								<h3 class="centerTextHorizontally">SQS</h3>
+								<img
+									class="img-fluid center-image data-pipelines-image"
+									src="assets/img/image 45.png"
+								/>
+								<p>
+									SQS or simple queue service simply send data from one source
+									to another. As the name implies, data is written/read off in a
+									queue which is typically FIFO (first in first out). It can act
+									as a buffer in case the destination is not ready to process
+									the data yet or to preserve data should the destination fail
+									to process the data. Data will be stored on the pipeline until
+									it expires after a set amount of days (means the destination
+									did not process the message). Consumers will have to poll data
+									off an SQS data pipeline in order to read it.
+								</p>
+							</div>
+						</div>
+						<div
+							class="data-pipelines-column-layout data-pipelines-box-marginRow5"
+						>
+							<div class="data-pipelines-box-hidden data-pipelines-box">
+								<h3 class="centerTextHorizontally">Step Functions</h3>
+								<img
+									class="img-fluid center-image data-pipelines-image"
+									src="assets/img/image 44.png"
+								/>
+								<p>
+									Step Functions are an easy way to build an end-to-end data
+									pipeline solution. For example, you can set place a Lambda and
+									connect the output to the input of another Lambda function.
+									The second Lambda’s output can then be passed as a DynamoDB
+									write operation. AWS has a drag and drop interface for
+									building out this whole pipeline.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="authentication" class="authentication">
+				<div class="container">
+					<div class="introTxt">
+						<h3>Authentication</h3>
+						<p>
+							Authentication is important in order to ensure the privacy and
+							integrity of an user’s data. Below is a common architecture for
+							adding authentication to a REST API, using Firebase as the login
+							mechanism.
+						</p>
+					</div>
+					<div class="authentication-column-layout">
+						<div class="authentication-box">
+							<h3>Common Authentication Example</h3>
+							<h3 class="redText">REST API Authentication with Firebase</h3>
+							<h8 class="blueText">Difficulty: Semi Advanced</h8>
+							<img
+								class="img-fluid authentication-image"
+								src="assets/img/image 46.png"
+							/>
+						</div>
+						<div class="authentication-col2">
+							<ol>
+								<h3>Steps</h3>
+								<li>
+									An user logs into the app and sends a request for private
+									data.
+								</li>
+								<li>The app passes the user login credentials to Firebase.</li>
+								<li>
+									Firebase returns back a JWT token that can be used for
+									authentication. This token contains some user metadata such as
+									their user id.
+								</li>
+								<li>
+									An HTTPS request is sent over the internet to API Gateway with
+									Firebase token in authorization header.
+								</li>
+								<li>
+									API Gateway passes authorization token to Lambda authorizer.
+								</li>
+								<li>
+									The Lambda authorizer will validate the token against
+									Firebase.
+								</li>
+								<li>
+									Firebase returns a success or error message depending on
+									whether the token is valid.
+								</li>
+								<li>
+									The Lambda authorizer will notify API Gateway whether the
+									authentication succeeded or failed.
+								</li>
+								<li>
+									If the Lambda authorizer succeeded, then the API code will be
+									triggered
+								</li>
+								<li>
+									The code will handle the user’s request and return back the
+									requested private data.
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="container footer-content-parent">
+					<!-- copyright centered -->
+					<div class="row footer-content">
+						<div class="col-md-12">
+							<p class="text-center whiteBackground">
+								&copy;2022
+								<a
+									class="footer-link"
+									target="_blank"
+									href="https://osuapp.club"
+									>OSU App Development Club</a
+								>
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script src="assets/js/index.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</html>
