@@ -35,7 +35,7 @@
 							id="ham"
 							class="ham hamRotate ham4"
 							viewBox="0 0 100 100"
-							width="80"
+							width="50px"
 							onclick="this.classList.toggle('active')"
 						>
 							<path
@@ -217,48 +217,49 @@
 								src="assets/img/image 52.png"
 							/>
 							<p>
-								S3 is a basically like Google Drive in which you can upload your
+								S3 is a basically like Google Drive where you can upload your
 								static files to. This method is best suited for simple HTML,
 								CSS, and JS files. Once you upload your files, S3 will provide
-								you a link to access them publicly in the web. You can
+								you a link to access them publicly on the web. You can
 								optionally add a content delivery network like Cloudfront in
 								front of your URL for localized caching of web content. This
-								simply reduces direct calls to your S3 content because they are
-								fetched from the Cloudfront cache.
+								simply reduces the number of direct calls to your S3 content
+								because they are fetched from the Cloudfront cache instead.
 							</p>
 						</div>
 					</div>
 					<div class="website-column-layout">
 						<div class="website-box-hidden website-box">
 							<h3>Elastic Beanstalk vs Elastic Container Service</h3>
-							<h8 class="blueText"
-								>Elastic Beanstalk Difficulty: Semi Advanced</h8
-							>
-							<h8 class="blueText"
-								>Elastic Container Service Difficulty: Advanced</h8
-							>
+							<h8 class="blueText">
+								Elastic Beanstalk Difficulty: Semi Advanced
+							</h8>
+							<br />
+							<h8 class="blueText">
+								Elastic Container Service Difficulty: Advanced
+							</h8>
 							<img
 								class="img-fluid center-image website-image"
 								src="assets/img/image 53.png"
 							/>
 							<p>
-								Deployment options 4 and 5 can be deployed using either elastic
-								beanstalk or elastic container service. The only difference
-								between the two is that elastic beanstalk provides an easy to
-								use interface for deploying an elastic container service under
+								Deployment options 4 and 5 can be deployed using either Elastic
+								Beanstalk or Elastic Container Service. The only difference
+								between the two is that Elastic Beanstalk provides an easy to
+								use interface for deploying an Elastic Container Service under
 								the hood. Some options may also not be available if using
-								elastic beanstalk. If you want to get fine grained control over
-								your site’s architecture, use elastic container service. Both
+								Elastic Beanstalk. If you want to get fine grain control over
+								your site’s architecture, use Elastic Container Service. Both
 								services allow you to spin up one or more copies of your site
-								across several servers. Your provide a link to the Docker image
-								of your website code and it’ll run it on each server. The amount
-								of servers running can be be automatically determined by an
-								auto-scaling group which detect the amount of traffic to your
-								site given the available CPU, memory from the servers available.
-								If too much traffic is coming, and there isn’t enough CPU or
-								memory from the current servers, it’ll automatically spin up
-								more servers to meet the demand. Lastly a load balancer will
-								provide you a url to visit your site and it will evenly
+								across several servers. You provide a link to the Docker image
+								of your website code and it’ll run a copy of it on each server.
+								The amount of servers running can be be automatically scaled by
+								an auto-scaling group which detects the amount of traffic to
+								your site and compares it to the current CPU and memory from the
+								servers available. If there’s too much traffic and not enough
+								CPU or memory from the current servers, it’ll automatically spin
+								up more servers to meet the demand. Lastly a load balancer will
+								provide you a URL to visit your site and it will evenly
 								distribute traffic across your servers.
 							</p>
 						</div>
@@ -275,9 +276,9 @@
 								hassle of managing them. This means they won’t show up as
 								traditional EC2 servers nor will they officially show up in your
 								account since they are actually managed by AWS. This makes
-								deploying easier since management of servers directly are
-								handled by AWs. You can only select a predefined server type and
-								it will be used for running your website code.
+								deploying easier since management of servers are handled by AWS.
+								You can only select a predefined server type and it will be used
+								for running your website code.
 							</p>
 						</div>
 					</div>
@@ -293,11 +294,11 @@
 							<p>
 								EC2 is the traditional way of deploying servers. These servers
 								will show up under your account as they are managed by you. You
-								have more control over the specifics of your servers such as
-								they security permissions they have as well as the virtual cloud
-								network they can be attached to. You can also have more control
-								over what software can be deployed onto the servers. It requires
-								more management and maintenance though. You can still select a
+								have more control over the specifics of your servers such as the
+								security permissions they have as well as the virtual cloud
+								network they can be attached to. You also have more control over
+								what software can be deployed onto the servers. It requires more
+								management and maintenance though. You can still select a
 								predefined server type and it will be used for running your
 								website code.
 							</p>
@@ -346,16 +347,16 @@
 									<h8 class="blueText">Difficulty: Moderate / Advanced</h8>
 									<img
 										class="img-fluid center-image api-image"
-										src="assets/img/image 22.png"
+										src="assets/img/image 23.png"
 									/>
 									<p>
-										Another fairly new API is GraphQL. It puts more of the data
-										queries onto the user. So the user selects the exact pieces
-										of data they want, including relationships to other pieces
-										of data in a single query. AppSync can run GraphQL for you.
-										You simply write queries/mutations an user can perform and
-										how it will map to the data sources (e.g. Lambda function,
-										database, or other data source). The
+										Another fairly new API is GraphQL. It gives the user more
+										flexibility with their data queries. So the user can select
+										the exact pieces of data they want, including relationships
+										to other pieces of data in a single query. AppSync can run
+										GraphQL for you. You simply write the queries/mutations an
+										user can perform and how it will map to the data sources
+										(e.g. Lambda function, database, or other data source). The
 										<a
 											class=""
 											target="_blank"
@@ -382,7 +383,7 @@
 									<h8 class="blueText">Difficulty: Moderate</h8>
 									<img
 										class="img-fluid center-image api-image"
-										src="assets/img/image 23.png"
+										src="assets/img/image 22.png"
 									/>
 									<p>
 										The most common type of API is REST. You typically perform
@@ -392,7 +393,7 @@
 										all the different paths and methods for you and you can
 										either have one Lambda function for each path/method or one
 										Lambda function to handle them all. The Lambda function will
-										simply run your code and so you choose what you want to do
+										simply run your code, and so you choose what you want to do
 										with the input request. API Gateway will provide you with a
 										public url to use.
 									</p>
@@ -454,9 +455,9 @@
 								src="assets/img/image 29.png"
 							/>
 							<p>
-								RDS or relational database service. It is a solution for hosting
+								RDS or relational database service is a solution for hosting
 								database systems like MySQL, SQL Server, or PostgresSQL. You
-								always stored data in a relational format which means data from
+								always store data in a relational format which means data from
 								one table should relate to data in another table. The format of
 								data in each column is very strict and the data you insert must
 								adhere to the data formats that you specify. RDS is
@@ -499,9 +500,9 @@
 								MongoDB is one of the most popular software for storing data in
 								a document form. It is quite similar to DynamoDB in which you
 								can choose to have data stored in relational or non-relational
-								format. However, the data is structure more like JSON and not so
-								much as a table. You can host a MongoDB cluster using DocumentDB
-								by AWS.
+								format. However, the data is structures more like JSON and not
+								so much as a table. You can host a MongoDB cluster using
+								DocumentDB by AWS.
 							</p>
 						</div>
 						<div class="data-storage-box-hidden data-storage-box">
@@ -567,7 +568,7 @@
 								/>
 								<p>
 									Kinesis Data Streams is a way to pass data from one or more
-									producers (generates data) to one or more consumers (process
+									producers (generates data) to one or more consumers (processes
 									data). Data can optionally be stored on a stream for up to a
 									year before being discarded. Typically consumers will have to
 									poll for the data. Each time you poll for data, you can either
@@ -626,10 +627,10 @@
 									different AWS services. As the name implies, the data pipeline
 									from a source to a destination is event driven, meaning that
 									as a source generates data, it’ll trigger the pipeline and
-									notify the destinations of the newly arrived data. Event
-									Bridge also provides schedulers to automatically send
-									destinations pieces of data based on a set schedule. Data does
-									not get stored on the pipeline.
+									notify the destinations of newly arrived data. Event Bridge
+									also provides schedulers to automatically send destinations
+									pieces of data based on a set schedule. Data does not get
+									stored on the pipeline.
 								</p>
 							</div>
 							<div class="data-pipelines-box-hidden data-pipelines-box">
@@ -642,9 +643,9 @@
 									As the logo implies, SNS, or simple notification service, gets
 									data from one source and notifies one or more data sources of
 									the new data. SNS can be used to trigger other AWS services or
-									send out notifications through mailing like AWS simple email
-									service or phone SMS texts. Data does not get stored on the
-									pipeline.
+									send out notifications through mailing services like AWS
+									simple email service or phone SMS texts. Data does not get
+									stored on the pipeline.
 								</p>
 							</div>
 						</div>
@@ -659,14 +660,15 @@
 								/>
 								<p>
 									SQS or simple queue service simply send data from one source
-									to another. As the name implies, data is written/read off in a
-									queue which is typically FIFO (first in first out). It can act
-									as a buffer in case the destination is not ready to process
-									the data yet or to preserve data should the destination fail
-									to process the data. Data will be stored on the pipeline until
-									it expires after a set amount of days (means the destination
-									did not process the message). Consumers will have to poll data
-									off an SQS data pipeline in order to read it.
+									to another. As the name implies, data is written/read off a
+									queue which is typically processed in FIFO (first in first
+									out) format. It can act as a buffer in case the destination is
+									not ready to process the data yet or it can preserve data
+									should the destination fail to process the data. Data will be
+									stored on the pipeline until it expires after a set amount of
+									days (means the destination did not process the message).
+									Consumers will have to poll data off an SQS data pipeline in
+									order to read it.
 								</p>
 							</div>
 						</div>
@@ -681,11 +683,11 @@
 								/>
 								<p>
 									Step Functions are an easy way to build an end-to-end data
-									pipeline solution. For example, you can set place a Lambda and
+									pipeline solution. For example, you can place a Lambda and
 									connect the output to the input of another Lambda function.
-									The second Lambda’s output can then be passed as a DynamoDB
-									write operation. AWS has a drag and drop interface for
-									building out this whole pipeline.
+									The second Lambda’s output can then trigger a DynamoDB write
+									operation. AWS has a drag and drop interface for building out
+									this entire pipelines like this.
 								</p>
 							</div>
 						</div>
@@ -710,7 +712,7 @@
 							<h8 class="blueText">Difficulty: Semi Advanced</h8>
 							<img
 								class="img-fluid authentication-image"
-								src="assets/img/image 46.png"
+								src="assets/img/image 59.png"
 							/>
 						</div>
 						<div class="authentication-col2">
@@ -731,7 +733,8 @@
 									Firebase token in authorization header.
 								</li>
 								<li>
-									API Gateway passes authorization token to Lambda authorizer.
+									API Gateway passes the authorization token to the Lambda
+									authorizer.
 								</li>
 								<li>
 									The Lambda authorizer will validate the token against
@@ -739,19 +742,19 @@
 								</li>
 								<li>
 									Firebase returns a success or error message depending on
-									whether the token is valid.
+									whether the token was valid.
 								</li>
 								<li>
 									The Lambda authorizer will notify API Gateway whether the
 									authentication succeeded or failed.
 								</li>
 								<li>
-									If the Lambda authorizer succeeded, then the API code will be
-									triggered
+									If the Lambda authorizer succeeded, then the API’s Lambda
+									function will be invoked.
 								</li>
 								<li>
-									The code will handle the user’s request and return back the
-									requested private data.
+									The API code will handle the user’s request and return back
+									the requested private data for the specific user.
 								</li>
 							</ol>
 						</div>

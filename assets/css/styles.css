@@ -138,7 +138,8 @@
   padding: 50px;
   padding-top: 105px;
   background: #E0EEFF;
-  padding-bottom: 5%;
+  padding-bottom: 10%;
+  min-height: 100vh;
 }
 
 /* iframe */
@@ -701,8 +702,10 @@
   transition-delay: 0s;
 }
 
-.data-storage-outside-column {
-  margin-top: 100px;
+@media (min-width: 1000px) {
+  .data-storage-outside-column {
+    margin-top: 100px;
+  }  
 }
 
 /* data pipelines */
@@ -738,13 +741,12 @@
   flex-direction: column;
   /* background: green; */
   align-items: center;
-
-  margin-top: 50px;
 }
 
 @media (min-width: 1000px) {
   .data-pipelines-row-layout {
-    gap: 50px;
+    gap: 70px;
+    margin-top: 50px;
   }
 }
 
